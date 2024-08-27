@@ -15,7 +15,7 @@ public class Screenmatch2Application implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		Principal principal = new Principal();
-		principal.exibMenu();
+		principal.exibeMenu();
 //		List<DadosTemporada> temporadas = new ArrayList<>();
 //
 //		for (int i = 1; i <= dados.totalTemporadas(); i++) {
