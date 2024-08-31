@@ -18,6 +18,7 @@ public class Episodios {
         this.temporada = numeroTemporada;
         this.titulo = dadosEpisodio.titulo();
         this.numeroEp = dadosEpisodio.numero();
+
         try {
             this.avaliacao =  Double.valueOf(dadosEpisodio.avaliacao());
         }catch (NumberFormatException exception){
