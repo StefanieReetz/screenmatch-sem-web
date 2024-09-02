@@ -19,6 +19,8 @@ public class Episodios {
     @ManyToOne
     private Serie serie;
 
+    public Episodios(){}
+
     public Episodios(Integer numeroTemporada, DadosEpisodio dadosEpisodio) {
         this.temporada = numeroTemporada;
         this.titulo = dadosEpisodio.titulo();
@@ -94,10 +96,10 @@ public class Episodios {
 
     @Override
     public String toString() {
-        return "temporada =" + temporada +
-                ", titulo ='" + titulo +
-                ", numeroEp =" + numeroEp +
-                ", avaliacao =" + avaliacao +
-                ", dataDeLancamento =" + dataDeLancamento;
+        return "\nTemporada: " + temporada +
+                ", Titulo: " + titulo +
+                ", NumeroEp: " + numeroEp +
+                ", Avaliacao: " + avaliacao +
+                ", Data De Lancamento: " + dataDeLancamento + "\n";
     }
 }
